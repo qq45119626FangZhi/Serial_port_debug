@@ -2,8 +2,9 @@
 ## 项目描述
 
 一个基于 Qt 6 的跨平台串口调试助手，主要用于在开发过程中与下位机（如单片机、嵌入式设备）进行串口通信调试。程序提供图形界面，支持枚举本机串口、配置波特率、发送文本指令，并以日志形式实时显示接收到的数据，便于快速验证下位机的通信协议和数据输出。
+<img width="998" height="663" alt="image" src="https://github.com/user-attachments/assets/b98b02a3-9c3d-443e-9b48-98f09b5eb29b" />
+<img width="995" height="648" alt="image" src="https://github.com/user-attachments/assets/b254f231-3879-4531-b964-017ca079fb3e" />
 
-<img width="1002" height="670" alt="9391ec185e43d50c9ea92b343f6df696" src="https://github.com/user-attachments/assets/73d6411e-816d-4f0b-a6cb-ccb1f12bb46c" />
 
 可执行程序包：release/Serial_port_debug.exe 
 

@@ -5,6 +5,7 @@
 
 <img width="1002" height="670" alt="9391ec185e43d50c9ea92b343f6df696" src="https://github.com/user-attachments/assets/73d6411e-816d-4f0b-a6cb-ccb1f12bb46c" />
 
+可执行程序包：release/Serial_port_debug.exe 
 
 ## 技术栈
 

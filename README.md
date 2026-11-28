@@ -57,3 +57,16 @@ Serial_port_debug/
 - 带时间戳的收发日志，支持清空
 - 串口异常提示
 
+## 构建与打包
+
+直接双击项目根目录的 `build.bat`，脚本会一次性完成：
+
+1. 初始化 MSVC 2022 x64 环境
+2. CMake 配置 + Ninja 编译 Release 版本
+3. 精简部署（仅保留必要的 Qt 运行库、平台插件和 VC 运行库 DLL）
+4. 用 WinRAR 打包成单文件自解压程序 `Serial_port_debug.exe`（约 10 MB）
+
+生成的可执行文件位于 `release/` 文件夹，可直接双击运行。构建中间产物在 `build/` 目录下。
+
+> 构建脚本中的工具链路径（Qt 6.12.0、VS 2022、CMake、Ninja、WinRAR）需与本机环境一致，如路径不同请修改 `build.bat` 开头的变量。
+

@@ -32,7 +32,7 @@
         <widget class="QComboBox" name="port_comboBox">
          <property name="minimumSize">
           <size>
-           <width>150</width>
+           <width>260</width>
            <height>0</height>
           </size>
          </property>
@@ -56,7 +56,7 @@
         <widget class="QComboBox" name="baud_comboBox">
          <property name="minimumSize">
           <size>
-           <width>120</width>
+           <width>100</width>
            <height>0</height>
           </size>
          </property>
@@ -106,10 +106,112 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="close_pushButton">
+        <widget class="QPushButton" name="open_pushButton">
          <property name="text">
-          <string>关闭串口</string>
+          <string>打开串口</string>
          </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="data_bits_label">
+         <property name="text">
+          <string>数据位:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="data_bits_comboBox">
+         <property name="currentIndex">
+          <number>3</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="parity_label">
+         <property name="text">
+          <string>校验位:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="parity_comboBox">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Even</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Odd</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Space</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Mark</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="stop_bits_label">
+         <property name="text">
+          <string>停止位:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="stop_bits_comboBox">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1.5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </item>
         </widget>
        </item>
        <item>
@@ -119,7 +221,7 @@
          </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>40</width>
+           <width>20</width>
            <height>20</height>
           </size>
          </property>
@@ -148,9 +250,32 @@
         </widget>
        </item>
        <item>
+        <widget class="QCheckBox" name="rx_checkBox">
+         <property name="text">
+          <string>RX</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="tx_checkBox">
+         <property name="text">
+          <string>TX</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QCheckBox" name="hex_checkBox">
          <property name="text">
-          <string>HEX发送</string>
+          <string>HEX</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
          </property>
         </widget>
        </item>

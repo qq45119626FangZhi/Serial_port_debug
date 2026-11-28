@@ -22,8 +22,10 @@ public:
 
 private slots:
     void on_refresh_pushButton_clicked();
-    void on_refresh_pushButton_2_clicked();
-    void on_refresh_pushButton_3_clicked();
+    void on_close_pushButton_clicked();
+    void on_send_pushButton_clicked();
+    void on_clear_pushButton_clicked();
+    void on_baud_comboBox_currentIndexChanged(int index);
     void on_input_lineEdit_returnPressed();
     void readSerialData();
     void onSerialError(QSerialPort::SerialPortError error);
@@ -32,6 +34,9 @@ private slots:
 private:
     void refreshPorts();
     bool ensurePortOpen();
+    void closePort();
+    void sendData();
+    void updateStatusLabel();
     void appendLog(const QString &text);
 
     Ui::MainWindow *ui;

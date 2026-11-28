@@ -3,7 +3,8 @@
 
 一个基于 Qt 6 的跨平台串口调试助手，主要用于在开发过程中与下位机（如单片机、嵌入式设备）进行串口通信调试。程序提供图形界面，支持枚举本机串口、配置波特率、发送文本指令，并以日志形式实时显示接收到的数据，便于快速验证下位机的通信协议和数据输出。
 
-<img width="789" height="646" alt="image" src="https://github.com/user-attachments/assets/6e53f3db-20ab-48e8-8d16-a2e62fd240ee" />
+<img width="1002" height="670" alt="9391ec185e43d50c9ea92b343f6df696" src="https://github.com/user-attachments/assets/73d6411e-816d-4f0b-a6cb-ccb1f12bb46c" />
+
 
 ## 技术栈
 
